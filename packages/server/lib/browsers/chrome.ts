@@ -396,6 +396,7 @@ export = {
     // https://github.com/cypress-io/cypress/issues/5912
     args.push(`--remote-debugging-port=${port}`)
     args.push('--remote-debugging-address=127.0.0.1')
+    args.push('--disable-dev-shm-usage')
 
     return args
   },
